@@ -2,22 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = 'Lucas'
+  const upperName = name.toUpperCase()
+  function sub(a, b){
+    return a - b
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Alterando usando JSX</h2>
+      <h3>Olá, {name}</h3>
+      <h3>Olá, {upperName}</h3>
+      <h3>Subtração: {sub(9,3)}</h3>
     </div>
   );
 }
