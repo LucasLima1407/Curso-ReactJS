@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name = 'Lucas'
@@ -9,6 +9,7 @@ function App() {
   }
   return (
     <div className="App">
+      <HelloWorld />
       <h2>Alterando usando JSX</h2>
       <h3>Olá, {name}</h3>
       <h3>Olá, {upperName}</h3>
