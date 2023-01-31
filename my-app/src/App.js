@@ -1,19 +1,18 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = 'Lucas'
-  const upperName = name.toUpperCase()
-  function sub(a, b){
-    return a - b
-  }
+
+  const nome = "Antônio"
+
   return (
     <div className="App">
-      <HelloWorld />
-      <h2>Alterando usando JSX</h2>
-      <h3>Olá, {name}</h3>
-      <h3>Olá, {upperName}</h3>
-      <h3>Subtração: {sub(9,3)}</h3>
+      <SayMyName nome='Matheus' />
+      <SayMyName nome='Lucas' />
+      <SayMyName nome={nome} />
+      <Pessoa nome='Lucas' idade='20' profissao='Programador' foto='https://via.placeholder/150'/>
     </div>
   );
 }
