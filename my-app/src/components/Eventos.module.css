@@ -1,0 +1,9 @@
+.EventsContent{
+    color: #fff;
+    background-color: #333;
+    margin: 0;
+}
+.EventsContainer {
+    background-color: #333;
+    border: 1px solid #111;
+}

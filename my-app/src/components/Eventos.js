@@ -1,17 +1,20 @@
-function Evento({numero}){
+import Button from "./evento/Button"
+import styles from "./Eventos.module.css"
+function Evento(){
 
     function meu_Evento() {
-        if(numero===1){
-            window.alert('Opa, ativei!')
-        } else if(numero===2){
-            window.alert('Ativado também!')
-        }
+        window.alert(`Opa ativei!`)
+    }
+
+    function segundo_Evento(){
+        window.alert(`Outro evento foi ativado!`)
     }
 
     return(
-        <div>
+        <div className={styles.EventsContent}>
         <p>Clique aqui para disparar um evento</p>
-        <button onClick={meu_Evento}>Ativar!</button>
+        <Button text="Primeiro Evento" event={meu_Evento} />
+        <Button text="Segundo Evento" event={segundo_Evento} />
         </div>
     )
 }
