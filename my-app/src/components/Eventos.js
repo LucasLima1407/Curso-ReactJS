@@ -1,9 +1,9 @@
 function Evento({numero}){
 
     function meu_Evento() {
-        if(numero==1){
+        if(numero===1){
             window.alert('Opa, ativei!')
-        } else if(numero==2){
+        } else if(numero===2){
             window.alert('Ativado também!')
         }
     }
