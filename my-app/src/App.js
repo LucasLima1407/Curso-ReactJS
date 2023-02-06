@@ -1,14 +1,14 @@
 import './App.css';
-import Condicional from './components/Condicional';
-import OutraLista from './components/OutraLista';
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
+import { useState } from 'react';
 function App() {
-  const meusItens = ['Camaro', 'Gol', 'Toro']
+  const  [nome, setNome] = useState()
   return (
     <div className="App">
-      <h1>Testando Eventos</h1>
-      <Condicional />
-      <OutraLista itens={meusItens} />
-      <OutraLista itens={[]}/>
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome}/>
     </div>
   );
 }
